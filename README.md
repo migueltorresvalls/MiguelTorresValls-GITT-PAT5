@@ -26,20 +26,17 @@ Ejecutar microservicio en una terminal
 
 ## Operaciones disponibles
 
-El servicio actualmente implementa un servicio que admite como parámetro en la URL (Query-param) el nombre *"name"*. Este campo no es obligatorio.
+> Añadir formularios a la base de datos mediante la sentencia: /addNewForm/nombre={nombre}/email={email}/mensaje={mensaje}
+**/Ejemplo:** http://localhost:8888/api/addNewForm/nombre=miguel torres/email=miguel@gmail.com/mensaje=Mensaje para la practica 5 de PAT
+![image](https://user-images.githubusercontent.com/97603106/235356972-ada0ce84-a287-4ef7-b8d2-1abaf07ecbcf.png)
 
-Mostrar pagina *"index.html"*
+> Obtener todos los formularios guardados en la base de datos: /getForms
+**/Ejemplo:** http://localhost:8888/api/getForms
+![image](https://user-images.githubusercontent.com/97603106/235357214-808d51ae-4b3c-4a0c-886e-5ebb52c656eb.png)
 
-> http://localhost:8888/
+> Eliminar un formulario de la base de datos: /deleteForm/param={parametro}
+**/Ejemplo:** http://localhost:8888/api/deleteForm/param=1 elimina el formulario con identificador 1
 
-Invocar operación *"healthCheck"*
+Además, también se comprueba que los datos introducidos sean correctos. En caso que no lo sean se mostrará una alerta por el navegador
 
-> http://localhost:8888/api/health?name=demo
-
-
-## Nuevas funcionalidades
-
-Invocar operación *"contactController"* para devolver la información de los usuarios DEMO almacenados en la BBDD H2. El campo ID representa el identificador del usuario en Base de Datos
-
-> http://localhost:8888/data/contact?id=1
 
