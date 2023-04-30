@@ -1,4 +1,4 @@
-package com.mtorresvalls.practica3pat.impl;
+package com.mtorresvalls.practica3pat.service.impl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
