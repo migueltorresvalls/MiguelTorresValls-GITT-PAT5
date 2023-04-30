@@ -42,9 +42,9 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                         <i class="fa-regular fa-envelope"></i>
                     </div>
-                    <input type="text" id="text" name="nombre" placeholder="John Doe" required autocomplete="off">
-                    <input type="email" id="email" name="email" placeholder="john@email.com" required autocomplete="off">
-                    <textarea id="message" name="mensaje" placeholder="Text goes here" required></textarea>
+                    <input type="text" id="text" name="nombre" placeholder="John Doe" autocomplete="off">
+                    <input type="text" id="email" name="email" placeholder="john@email.com" autocomplete="off">
+                    <textarea id="message" name="mensaje" placeholder="Text goes here"></textarea>
                     <input type="submit" id="submit" name="submit" value="Submit" onclick="addNewForm()">
                     <p>Thank you for getting in touch with me. 
                     <b>I will answer as soon as possible.</b></p>
@@ -72,6 +72,10 @@
                 } else {
                     alert("Error al añadir un nuevo formulario");
                 }
+
+                document.getElementById("text").value = ""
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
             }
           </script>
     </body>
